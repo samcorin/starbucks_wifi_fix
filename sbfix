@@ -1,0 +1,10 @@
+#!/bin/bash
+# Fix the annoying reconnection issues while working at Starbucks
+
+while :
+do
+  echo “Restarting WiFi and reconnecting…”
+  osx-wifi-cli restart && osx-wifi-cli “at_STARBUCKS_Wi2” xxx
+  echo “Restarted”
+  sleep 300
+done
